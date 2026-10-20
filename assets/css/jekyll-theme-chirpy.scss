@@ -1,0 +1,85 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* ===== f7ash · acento terminal/hacker sobre el tema oscuro de Chirpy ===== */
+:root[data-theme='dark'] {
+  --link-color: #43d17a;
+  --link-underline-color: rgb(67 209 122 / 45%);
+  --site-title-color: #9fd9b0;
+  --site-subtitle-color: #7d9184;
+  --sidebar-active-color: #43d17a;
+  --sidebar-hover-bg: rgb(67 209 122 / 8%);
+  --toc-highlight: #43d17a;
+  --tag-hover: rgb(67 209 122 / 16%);
+  --tag-border: rgb(67 209 122 / 30%);
+  --avatar-border-color: rgb(67 209 122 / 55%);
+  --checkbox-checked-color: #43d17a;
+  --clipboard-checked-color: #43d17a;
+  --footnote-target-bg: rgb(67 209 122 / 25%);
+  --card-shadow: rgb(0 0 0 / 55%) 0 8px 24px 0, rgb(67 209 122 / 10%) 0 0 0 1px;
+  --card-hover-bg: rgb(67 209 122 / 6%);
+}
+
+/* glow sutil al hacer hover sobre las tarjetas de post */
+.post-preview {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      rgb(0 0 0 / 55%) 0 10px 28px 0,
+      rgb(67 209 122 / 22%) 0 0 0 1px;
+  }
+}
+
+/* portadas de post: leve realce de color */
+.preview-img img,
+#post-list .preview-img img {
+  filter: saturate(1.05) contrast(1.02);
+}
+
+#avatar img {
+  box-shadow: 0 0 18px rgb(67 209 122 / 25%);
+}
+
+.site-title a {
+  letter-spacing: 0.02em;
+}
+
+/* tags: ligero glow verde al pasar el mouse */
+.post-tag:hover {
+  box-shadow: 0 0 0 1px rgb(67 209 122 / 45%);
+  color: #43d17a !important;
+}
+
+/* bloques de código: borde sutil con el acento */
+.highlighter-rouge,
+div.highlight {
+  border: 1px solid rgb(67 209 122 / 12%);
+  border-radius: 8px;
+}
+
+.content h2,
+.content h3 {
+  scroll-margin-top: 4rem;
+}
+
+/* prompts/blockquotes: raya izquierda un poco más gruesa para que resalten */
+.content blockquote {
+  border-left-width: 4px;
+}

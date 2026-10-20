@@ -3,6 +3,9 @@ title: "HTB Forest — de sesión nula a Domain Admin"
 date: 2026-07-18 10:00:00 -0400
 categories: [Writeups, Active Directory]
 tags: [htb, active-directory, kerberos, asreproast, dcsync, bloodhound, oscp]
+image:
+  path: /assets/img/posts/forest.png
+  alt: "HTB Forest — Active Directory, Easy"
 ---
 
 ## Resumen

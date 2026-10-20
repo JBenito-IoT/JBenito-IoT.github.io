@@ -3,6 +3,9 @@ title: "HTB DanglingTree — WAC + SmarterMail RCE + DPAPI + ADCS ESC1"
 date: 2026-08-15 10:00:00 -0400
 categories: [Writeups, Active Directory]
 tags: [htb, active-directory, windows-admin-center, smartermail, dpapi, adcs, esc1, oscp]
+image:
+  path: /assets/img/posts/danglingtree.png
+  alt: "HTB DanglingTree — Windows AD, Medium"
 ---
 
 ## Resumen

@@ -3,6 +3,9 @@ title: "HTB DarkZero — SSTI + 2 CVEs de Gitea + GodPotato + bypass cross-fores
 date: 2026-07-31 10:00:00 -0400
 categories: [Writeups, Active Directory]
 tags: [htb, active-directory, ssti, handlebars, gitea, godpotato, cross-forest, sid-filtering, insane, oscp]
+image:
+  path: /assets/img/posts/darkzero.png
+  alt: "HTB DarkZero — Windows AD, Insane"
 ---
 
 {% raw %}

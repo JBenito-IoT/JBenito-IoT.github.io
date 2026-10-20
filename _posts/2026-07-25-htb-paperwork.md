@@ -3,6 +3,9 @@ title: "HTB Paperwork — LPD Command Injection + PJL Path Traversal + FD Leak"
 date: 2026-07-25 10:00:00 -0400
 categories: [Writeups, Linux]
 tags: [htb, linux, rfc1179, command-injection, path-traversal, scm-rights, oscp]
+image:
+  path: /assets/img/posts/paperwork.png
+  alt: "HTB Paperwork — Linux, Medium"
 ---
 
 ## Resumen

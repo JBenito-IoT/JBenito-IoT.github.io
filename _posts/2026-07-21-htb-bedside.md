@@ -3,6 +3,9 @@ title: "HTB Bedside — pickle RCE + path traversal + torch.load() a root"
 date: 2026-07-21 10:00:00 -0400
 categories: [Writeups, Linux]
 tags: [htb, linux, docker, pickle, deserialization, pytorch, oscp]
+image:
+  path: /assets/img/posts/bedside.png
+  alt: "HTB Bedside — Docker / ML Pipeline"
 ---
 
 ## Resumen
